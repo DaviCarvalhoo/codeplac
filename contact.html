@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Codeplac</title>
+    <meta
+      name="description"
+      content="Entre em contato conosco para dúvidas, sugestões ou ajuda sobre programação"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <div class="bg-gradient-primary p-2 rounded me-2 shadow-glow">
+            <i class="bi bi-code-slash text-white fs-4"></i>
+          </div>
+          <span class="fs-3 fw-bold">Codeplac</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="navbar-nav ms-auto">
+            <a
+              class="nav-link d-flex align-items-center me-2"
+              href="index.html"
+            >
+              <i class="bi bi-house me-1"></i>
+              Home
+            </a>
+            <a
+              class="nav-link d-flex align-items-center me-2"
+              href="games.html"
+            >
+              <i class="bi bi-trophy me-1"></i>
+              Jogos
+            </a>
+            <a
+              class="nav-link active d-flex align-items-center"
+              href="contact.html"
+            >
+              <i class="bi bi-chat-dots me-1"></i>
+              Contato
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="hero-section py-5">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-5">
+          <div class="d-flex justify-content-center align-items-center mb-4">
+            <div class="bg-gradient-primary p-3 rounded-3 me-3 shadow-glow">
+              <i class="bi bi-chat-dots text-white fs-2"></i>
+            </div>
+            <h1 class="display-4 fw-bold text-white mb-0">Entre em Contato</h1>
+          </div>
+          <p class="fs-5 text-light-gray mx-auto" style="max-width: 600px">
+            Tem dúvidas, sugestões ou precisa de ajuda? Estamos aqui para ajudar
+            você em sua jornada de aprendizado!
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-lg-8">
+            <div class="card bg-gradient-secondary border-secondary shadow-lg">
+              <div class="card-header border-secondary">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope text-primary me-2"></i>
+                  <h5 class="card-title text-white mb-0">Envie sua mensagem</h5>
+                </div>
+                <p class="text-light-gray mt-2 mb-0">
+                  Preencha o formulário abaixo e entraremos em contato o mais
+                  breve possível.
+                </p>
+              </div>
+              <div class="card-body">
+                <form id="contactForm">
+                  <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label text-white"
+                        >Nome completo</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control bg-dark border-secondary text-white"
+                        id="name"
+                        placeholder="Seu nome"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label text-white"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control bg-dark border-secondary text-white"
+                        id="email"
+                        placeholder="seu@email.com"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subject" class="form-label text-white"
+                      >Assunto</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-dark border-secondary text-white"
+                      id="subject"
+                      placeholder="Sobre o que você quer falar?"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="message" class="form-label text-white"
+                      >Mensagem</label
+                    >
+                    <textarea
+                      class="form-control bg-dark border-secondary text-white"
+                      id="message"
+                      rows="5"
+                      placeholder="Descreva sua dúvida, sugestão ou como podemos ajudar..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary bg-gradient-primary shadow-glow w-100 py-2"
+                    id="submitBtn"
+                  >
+                    <i class="bi bi-send me-2"></i>
+                    Enviar mensagem
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div class="col-lg-4">
+            <!-- Contact Info -->
+            <div
+              class="card bg-gradient-secondary border-secondary shadow-lg mb-4"
+            >
+              <div class="card-header border-secondary">
+                <h6 class="card-title text-white mb-0">
+                  Informações de Contato
+                </h6>
+              </div>
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-envelope text-primary fs-5 me-3 mt-1"></i>
+                  <div>
+                    <p class="text-white fw-bold mb-0">Email</p>
+                    <p class="text-light-gray mb-0">contato@Codeplac.dev</p>
+                  </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                  <i class="bi bi-clock text-primary fs-5 me-3 mt-1"></i>
+                  <div>
+                    <p class="text-white fw-bold mb-0">
+                      Horário de Atendimento
+                    </p>
+                    <p class="text-light-gray mb-0">
+                      Segunda à Sexta<br />9h às 18h
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <i class="bi bi-geo-alt text-primary fs-5 me-3 mt-1"></i>
+                  <div>
+                    <p class="text-white fw-bold mb-0">Localização</p>
+                    <p class="text-light-gray mb-0">Brasil<br />Online</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div
+              class="card bg-gradient-secondary border-secondary shadow-lg mb-4"
+            >
+              <div class="card-header border-secondary">
+                <h6 class="card-title text-white mb-0">Siga-nos</h6>
+                <p class="text-light-gray mb-0 mt-2">
+                  Conecte-se conosco nas redes sociais para dicas e atualizações
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="d-grid gap-2">
+                  <a
+                    href="#"
+                    class="btn btn-outline-light d-flex align-items-center"
+                  >
+                    <i class="bi bi-github me-3"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="btn btn-outline-light d-flex align-items-center"
+                  >
+                    <i class="bi bi-twitter me-3"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="btn btn-outline-light d-flex align-items-center"
+                  >
+                    <i class="bi bi-linkedin me-3"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="card bg-gradient-secondary border-secondary shadow-lg">
+              <div class="card-body text-center">
+                <h6 class="text-white fw-bold mb-3">Perguntas Frequentes</h6>
+                <p class="text-light-gray mb-3">
+                  Antes de entrar em contato, confira se sua dúvida já foi
+                  respondida
+                </p>
+                <button class="btn btn-outline-light w-100">Ver FAQ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="successToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-success text-white">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          <strong class="me-auto">Sucesso!</strong>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+        <div class="toast-body bg-dark text-white">
+          Mensagem enviada! Obrigado pelo contato. Responderemos em breve!
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

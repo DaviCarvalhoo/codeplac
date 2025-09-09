@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos - Codeplac</title>
+    <meta
+      name="description"
+      content="Desafios de código gamificados para aprender programação de forma divertida"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <div class="bg-gradient-primary p-2 rounded me-2 shadow-glow">
+            <i class="bi bi-code-slash text-white fs-4"></i>
+          </div>
+          <span class="fs-3 fw-bold">Codeplac</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="navbar-nav ms-auto">
+            <a
+              class="nav-link d-flex align-items-center me-2"
+              href="index.html"
+            >
+              <i class="bi bi-house me-1"></i>
+              Home
+            </a>
+            <a
+              class="nav-link active d-flex align-items-center me-2"
+              href="games.html"
+            >
+              <i class="bi bi-trophy me-1"></i>
+              Jogos
+            </a>
+            <a class="nav-link d-flex align-items-center" href="contact.html">
+              <i class="bi bi-chat-dots me-1"></i>
+              Contato
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="hero-section py-5">
+      <div class="container">
+        <!-- User Stats -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <div class="card bg-gradient-secondary border-secondary shadow-lg">
+              <div class="card-header border-secondary">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h4 class="card-title text-white mb-1">Seu Progresso</h4>
+                    <p class="text-light-gray mb-0">
+                      Continue aprendendo para subir de nível!
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-md-end">
+                    <div
+                      class="d-flex align-items-center justify-content-md-end"
+                    >
+                      <i class="bi bi-star text-primary fs-4 me-2"></i>
+                      <span class="fs-4 fw-bold text-primary">225 XP</span>
+                    </div>
+                    <p class="text-light-gray mb-0">Nível 3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mb-2 d-flex justify-content-between">
+                  <span class="text-light-gray"
+                    >Progresso para o próximo nível</span
+                  >
+                  <span class="text-light-gray">225/300 XP</span>
+                </div>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Games Header -->
+        <div class="d-flex align-items-center mb-4">
+          <i class="bi bi-trophy text-primary fs-2 me-3"></i>
+          <h1 class="display-6 fw-bold text-white mb-0">Desafios de Código</h1>
+        </div>
+
+        <!-- Games Grid -->
+        <div class="row g-4">
+          <!-- Game 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card game-card h-100 border-secondary">
+              <div class="card-header border-secondary">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="bg-gradient-primary p-3 rounded-3 me-3 shadow-glow"
+                    >
+                      <i class="bi bi-code-slash text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h6 class="card-title text-white mb-1">
+                        Variáveis Básicas
+                      </h6>
+                      <span class="badge bg-outline-light">JavaScript</span>
+                    </div>
+                  </div>
+                  <span class="badge bg-success">Fácil</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-light-gray mb-3">
+                  Aprenda a declarar e usar variáveis em JavaScript
+                </p>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="text-light-gray">Progresso</span>
+                    <span class="text-light-gray">80%</span>
+                  </div>
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-primary"
+                      role="progressbar"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center text-primary">
+                    <i class="bi bi-star me-1"></i>
+                    <span>50 XP</span>
+                  </div>
+                  <button
+                    class="btn btn-primary bg-gradient-primary shadow-glow"
+                  >
+                    <i class="bi bi-play-fill me-1"></i>
+                    Continuar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card game-card h-100 border-secondary">
+              <div class="card-header border-secondary">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="bg-gradient-primary p-3 rounded-3 me-3 shadow-glow"
+                    >
+                      <i class="bi bi-lightning-charge text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h6 class="card-title text-white mb-1">
+                        Funções Essenciais
+                      </h6>
+                      <span class="badge bg-outline-light">JavaScript</span>
+                    </div>
+                  </div>
+                  <span class="badge bg-warning">Médio</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-light-gray mb-3">
+                  Domine a criação e uso de funções
+                </p>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="text-light-gray">Progresso</span>
+                    <span class="text-light-gray">45%</span>
+                  </div>
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-primary"
+                      role="progressbar"
+                      style="width: 45%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center text-primary">
+                    <i class="bi bi-star me-1"></i>
+                    <span>75 XP</span>
+                  </div>
+                  <button
+                    class="btn btn-primary bg-gradient-primary shadow-glow"
+                  >
+                    <i class="bi bi-play-fill me-1"></i>
+                    Continuar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card game-card h-100 border-secondary">
+              <div class="card-header border-secondary">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div class="d-flex align-items-center">
+                    <div
+                      class="bg-gradient-primary p-3 rounded-3 me-3 shadow-glow"
+                    >
+                      <i class="bi bi-bullseye text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h6 class="card-title text-white mb-1">
+                        Loops e Iteração
+                      </h6>
+                      <span class="badge bg-outline-light">Lógica</span>
+                    </div>
+                  </div>
+                  <span class="badge bg-warning">Médio</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-light-gray mb-3">
+                  Pratique loops while, for e forEach
+                </p>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="text-light-gray">Progresso</span>
+                    <span class="text-light-gray">0%</span>
+                  </div>
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-primary"
+                      role="progressbar"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center text-primary">
+                    <i class="bi bi-star me-1"></i>
+                    <span>100 XP</span>
+                  </div>
+                  <button
+                    class="btn btn-primary bg-gradient-primary shadow-glow"
+                  >
+                    <i class="bi bi-play-fill me-1"></i>
+                    Começar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game 4 - Locked -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card game-card h-100 border-secondary opacity-75">
+              <div class="card-header border-secondary">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div class="d-flex align-items-center">
+                    <div class="bg-secondary p-3 rounded-3 me-3">
+                      <i class="bi bi-lock text-muted fs-4"></i>
+                    </div>
+                    <div>
+                      <h6 class="card-title text-muted mb-1">
+                        Manipulação de Arrays
+                      </h6>
+                      <span class="badge bg-secondary">JavaScript</span>
+                    </div>
+                  </div>
+                  <span class="badge bg-danger">Difícil</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-muted mb-4">
+                  Métodos avançados para trabalhar com arrays
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center text-muted">
+                    <i class="bi bi-star me-1"></i>
+                    <span>125 XP</span>
+                  </div>
+                  <button class="btn btn-secondary" disabled>
+                    <i class="bi bi-lock me-1"></i>
+                    Bloqueado
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

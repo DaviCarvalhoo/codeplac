@@ -1,0 +1,267 @@
+/* GitHub-inspired Design System */
+:root {
+  /* Cores - Tema espacial escuro com acentos neon */
+  --bg-primary: #0b0f19;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1f2937;
+  --border-color: #2d3748;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --accent-primary: #3b82f6;  /* azul neon */
+  --accent-secondary: #6366f1; /* roxo */
+  --success: #10b981; /* verde futurista */
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #0ea5e9;
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #3b82f6, #6366f1); /* azul → roxo */
+  --gradient-secondary: linear-gradient(135deg, #111827, #1f2937);
+  --gradient-hero: linear-gradient(135deg, #0b0f19, #111827);
+  --gradient-overlay: linear-gradient(
+    180deg,
+    rgba(13, 17, 23, 0.2),
+    transparent
+  );
+
+  /* Shadows */
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.4);
+  --shadow-sm: 0 1px 2px 0 rgba(13, 17, 23, 0.15);
+  --shadow-md: 0 4px 6px -1px rgba(13, 17, 23, 0.15);
+  --shadow-lg: 0 10px 15px -3px rgba(13, 17, 23, 0.15);
+}
+
+/* Base Styles */
+body {
+  background: var(--gradient-hero) !important;
+  color: var(--text-primary) !important;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif;
+}
+
+/* Background Gradients */
+.bg-gradient-primary {
+  background: var(--gradient-primary) !important;
+}
+
+.bg-gradient-secondary {
+  background: var(--gradient-secondary) !important;
+}
+
+.hero-section {
+  background: var(--gradient-hero);
+}
+
+/* Text Gradients */
+.text-gradient {
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Text Colors */
+.text-light-gray {
+  color: var(--text-secondary) !important;
+}
+
+/* Custom Cards */
+.card {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(99, 102, 241, 0.2);
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg), 0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+.cta-card {
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(99, 102, 241, 0.4);
+}
+
+
+/* Header */
+.navbar-dark {
+  background-color: var(--bg-primary) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-secondary) !important;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  padding: 8px 12px !important;
+  margin: 0 2px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-tertiary);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-secondary);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-outline-light {
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--text-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Form Controls */
+.form-control {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-control:focus {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-control::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+/* Progress Bars */
+.progress {
+  background-color: var(--bg-tertiary) !important;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  background: var(--gradient-primary) !important;
+  border-radius: 8px;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+  color: white !important;
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.bg-outline-light {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Shadows */
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+/* Overlay */
+.bg-gradient-overlay {
+  background: var(--gradient-overlay);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.loading-animation {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+
+  .display-5 {
+    font-size: 2rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Toast Styling */
+.toast {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.toast-header.bg-success {
+  background: var(--gradient-primary) !important;
+  border-color: var(--accent-primary) !important;
+}
+
+.toast-body {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Card Headers */
+.card-header {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Icon Colors */
+.text-primary {
+  color: var(--accent-primary) !important;
+}
+
+/* Custom Utilities */
+.border-secondary {
+  border-color: var(--border-color) !important;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

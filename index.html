@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeplac - Aprenda programação jogando</title>
+    <meta
+      name="description"
+      content="Plataforma gamificada para aprender programação de forma divertida, inspirada no Duolingo. Desafios, jogos e progressão adaptativa."
+    />
+    <meta name="author" content="Codeplac" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Codeplac - Aprenda programação jogando"
+    />
+    <meta
+      property="og:description"
+      content="Plataforma gamificada para aprender programação de forma divertida, inspirada no Duolingo. Desafios, jogos e progressão adaptativa."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <div class="bg-gradient-primary p-2 rounded me-2 shadow-glow">
+            <i class="bi bi-code-slash text-white fs-4"></i>
+          </div>
+          <span class="fs-3 fw-bold">Codeplac</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="navbar-nav ms-auto">
+            <a
+              class="nav-link active d-flex align-items-center me-2"
+              href="index.html"
+            >
+              <i class="bi bi-house me-1"></i>
+              Home
+            </a>
+            <a
+              class="nav-link d-flex align-items-center me-2"
+              href="games.html"
+            >
+              <i class="bi bi-trophy me-1"></i>
+              Jogos
+            </a>
+            <a class="nav-link d-flex align-items-center" href="contact.html">
+              <i class="bi bi-chat-dots me-1"></i>
+              Contato
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section py-5">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="text-center"></div>
+                <div class="d-flex justify-content-center">
+                  <span class="badge bg-gradient-primary shadow-glow mb-3 p-2">
+                  🚀 Nova plataforma de aprendizado
+                  </span>
+                </div>
+                <h1 class="display-4 fw-bold text-white lh-1 mb-3">
+                  Aprenda a
+                  <span class="text-gradient">programar</span> brincando
+                </h1>
+                <p class="fs-5 text-light-gray mb-4">
+                  Uma plataforma inspirada no Duolingo para aprender programação
+                  de forma divertida e interativa. Desafios, jogos e progressão
+                  gamificada!
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <a
+                    href="games.html"
+                    class="btn btn-primary btn-lg px-4 me-sm-3 bg-gradient-primary shadow-glow"
+                  >
+                    <i class="bi bi-play-fill me-2"></i>
+                    Começar a Jogar
+                  </a>
+                  <a
+                    href="contact.html"
+                    class="btn btn-outline-light btn-lg px-4"
+                  >
+                    <i class="bi bi-book me-2"></i>
+                    Saiba Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-5">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-4">
+              Por que escolher o Codeplac?
+            </h2>
+            <p class="fs-5 text-light-gray mx-auto" style="max-width: 600px">
+              Metodologia comprovada do Duolingo aplicada ao aprendizado de
+              programação
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-trophy fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Gamificação Completa</h5>
+                  <p class="card-text text-light-gray">
+                    Sistema de XP, badges, níveis e conquistas. Torne o
+                    aprendizado viciante e divertido como um jogo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-bullseye fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Desafios Práticos</h5>
+                  <p class="card-text text-light-gray">
+                    Exercícios interativos, debug de código, completar funções e
+                    muito mais. Aprenda fazendo!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-lightning-charge fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Progresso Adaptativo</h5>
+                  <p class="card-text text-light-gray">
+                    Algoritmo inteligente que se adapta ao seu ritmo e
+                    dificuldades, como no Duolingo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-code-slash fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Múltiplas Linguagens</h5>
+                  <p class="card-text text-light-gray">
+                    JavaScript, Python, Java, C++ e mais. Aprenda a linguagem
+                    que quiser no seu próprio ritmo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-people fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Comunidade Ativa</h5>
+                  <p class="card-text text-light-gray">
+                    Conecte-se com outros aprendizes, compartilhe conquistas e
+                    participe de desafios em grupo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 border-secondary">
+                <div class="card-body text-center p-4">
+                  <div
+                    class="bg-gradient-primary p-4 rounded-3 d-inline-block mb-3 shadow-glow"
+                  >
+                    <i class="bi bi-star fs-2 text-white"></i>
+                  </div>
+                  <h5 class="card-title text-white">Certificações</h5>
+                  <p class="card-text text-light-gray">
+                    Conquiste certificados reconhecidos pelo mercado e mostre
+                    suas habilidades para o mundo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-5">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card bg-gradient-primary border-0 shadow-lg cta-card">
+                <div class="card-body p-5 text-center">
+                  <h3 class="display-6 fw-bold text-white mb-4">
+                    Pronto para começar sua jornada?
+                  </h3>
+                  <p class="fs-5 text-white mb-4 opacity-75">
+                    Junte-se a milhares de desenvolvedores que já estão
+                    aprendendo de forma divertida e eficiente.
+                  </p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="games.html" class="btn btn-light btn-lg px-4">
+                      <i class="bi bi-trophy me-2"></i>
+                      Explorar Jogos
+                      <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
